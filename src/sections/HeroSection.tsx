@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { portfolioContent } from '../data/portfolio'
 
 export function HeroSection() {
-  const { hero, role, location } = portfolioContent
+  const { hero, role, profileFacts } = portfolioContent
 
   return (
     <section className="hero-section section">
@@ -18,11 +18,11 @@ export function HeroSection() {
           <p className="hero-copy__intro">{hero.intro}</p>
 
           <div className="hero-actions">
-            <a className="button button--primary" href="#work">
-              Review capability blocks
+            <a className="button button--primary" href={hero.primaryCtaHref}>
+              {hero.primaryCtaLabel}
             </a>
-            <a className="button button--ghost" href="#contact">
-              Prepare final version
+            <a className="button button--ghost" href={hero.secondaryCtaHref}>
+              {hero.secondaryCtaLabel}
             </a>
           </div>
 
@@ -40,23 +40,18 @@ export function HeroSection() {
             <span className="hero-panel__label">Current positioning</span>
             <h2>{role}</h2>
             <p>
-              Oriented to software engineering roles where product quality,
-              backend rigor and execution discipline matter.
+              Software engineering profile with hands-on experience across
+              full-stack platforms, cloud deployment, data workflows, and
+              AI-adjacent systems.
             </p>
 
             <div className="hero-panel__stats">
-              <div>
-                <span>Target profile</span>
-                <strong>Product / Platform / Full-Stack</strong>
-              </div>
-              <div>
-                <span>Location</span>
-                <strong>{location}</strong>
-              </div>
-              <div>
-                <span>Fit themes</span>
-                <strong>Marketplace, travel-tech, scale</strong>
-              </div>
+              {profileFacts.map(fact => (
+                <div key={fact.label}>
+                  <span>{fact.label}</span>
+                  <strong>{fact.value}</strong>
+                </div>
+              ))}
             </div>
           </div>
         </motion.aside>

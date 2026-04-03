@@ -2,10 +2,12 @@ import { motion } from 'framer-motion'
 import { portfolioContent } from './data/portfolio'
 import { AboutSection } from './sections/AboutSection'
 import { ContactSection } from './sections/ContactSection'
+import { CredentialsSection } from './sections/CredentialsSection'
+import { ExperienceSection } from './sections/ExperienceSection'
 import { FocusSection } from './sections/FocusSection'
 import { HeroSection } from './sections/HeroSection'
+import { ProjectsSection } from './sections/ProjectsSection'
 import { SkillsSection } from './sections/SkillsSection'
-import { WorkSection } from './sections/WorkSection'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -25,14 +27,15 @@ export default function App() {
       <header className="site-header">
         <a className="brand-mark" href="#top">
           <span className="brand-mark__mono">SJ</span>
-          <span className="brand-mark__text">Software Developer</span>
+          <span className="brand-mark__text">{portfolioContent.name}</span>
         </a>
 
         <nav className="top-nav" aria-label="Primary">
           <a href="#about">About</a>
-          <a href="#focus">Focus</a>
+          <a href="#focus">Strengths</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
           <a href="#skills">Stack</a>
-          <a href="#work">Work</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
@@ -57,15 +60,17 @@ export default function App() {
 
         <AboutSection />
         <FocusSection />
+        <ExperienceSection />
+        <ProjectsSection />
         <SkillsSection />
-        <WorkSection />
+        <CredentialsSection />
         <ContactSection />
       </main>
 
       <footer className="site-footer">
         <p>
-          © {year} S. Jaimes. Built with React, TypeScript and a product-first
-          engineering lens.
+          © {year} {portfolioContent.name}. Built with React, TypeScript and a
+          software-engineering-first narrative.
         </p>
       </footer>
     </div>

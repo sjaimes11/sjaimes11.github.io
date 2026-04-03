@@ -11,7 +11,7 @@ export function AboutSection() {
       <SectionTitle
         eyebrow="About"
         title={about.title}
-        description="This page is already optimized for credibility: high signal, low noise and a clear technical angle."
+        description={about.description}
       />
 
       <div className="about-grid">

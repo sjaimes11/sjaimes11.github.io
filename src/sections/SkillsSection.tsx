@@ -8,8 +8,8 @@ export function SkillsSection() {
     <section className="section" id="skills">
       <SectionTitle
         eyebrow="Stack"
-        title="Structured to help recruiters understand fit in under a minute"
-        description="The content layer lives in a single data file so your real technologies and experience can be updated fast."
+        title="A stack that already aligns with product and platform teams"
+        description="This section now mirrors the technologies and engineering areas that appear across your software and AI-oriented CV versions."
       />
 
       <div className="skills-grid">

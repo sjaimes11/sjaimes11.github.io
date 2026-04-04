@@ -1,0 +1,6 @@
+Place your portrait image here as:
+
+profile-photo.jpg
+
+The hero section is already wired to load:
+/profile-photo.jpg

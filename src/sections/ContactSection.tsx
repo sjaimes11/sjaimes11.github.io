@@ -61,6 +61,25 @@ function PinLogo() {
   )
 }
 
+function InstagramLogo() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect
+        x="4.25"
+        y="4.25"
+        width="15.5"
+        height="15.5"
+        rx="4.2"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+      />
+      <circle cx="12" cy="12" r="3.55" fill="none" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="17.35" cy="6.7" r="1.05" fill="currentColor" />
+    </svg>
+  )
+}
+
 function getLogo(label: string): ReactNode {
   if (label === 'LinkedIn') {
     return <LinkedInLogo />
@@ -72,6 +91,14 @@ function getLogo(label: string): ReactNode {
 
   if (label === 'Gmail') {
     return <GmailLogo />
+  }
+
+  if (label === 'Instagram') {
+    return <InstagramLogo />
+  }
+
+  if (label === 'Bogota' || label === 'Bogotá') {
+    return <PinLogo />
   }
 
   return <PinLogo />

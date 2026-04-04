@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import type { PortfolioContent } from '../data/portfolio'
 
@@ -7,6 +8,8 @@ type HeroSectionProps = {
 
 export function HeroSection({ content }: HeroSectionProps) {
   const { hero, role, profileFacts } = content
+  const [imageError, setImageError] = useState(false)
+  const hasImage = hero.imagePath && !imageError
 
   return (
     <section className="hero-section section">
@@ -40,10 +43,28 @@ export function HeroSection({ content }: HeroSectionProps) {
           transition={{ duration: 0.65, delay: 0.08 }}
         >
           <div className="hero-panel__grid" />
-          <div className="hero-panel__content">
-            <span className="hero-panel__label">{hero.panelLabel}</span>
-            <h2>{role}</h2>
-            <p>{hero.panelDescription}</p>
+          <div className="hero-panel__content hero-panel__content--with-photo">
+            <div className="hero-panel__photo-frame">
+              {hasImage ? (
+                <img
+                  className="hero-panel__photo"
+                  src={hero.imagePath}
+                  alt={hero.imageAlt ?? content.name}
+                  onError={() => setImageError(true)}
+                />
+              ) : (
+                <div className="hero-panel__photo-placeholder">
+                  <span>{content.shortName}</span>
+                  <p>{hero.imageFallback}</p>
+                </div>
+              )}
+            </div>
+
+            <div className="hero-panel__positioning">
+              <span className="hero-panel__label">{hero.panelLabel}</span>
+              <h2>{role}</h2>
+              <p>{hero.panelDescription}</p>
+            </div>
 
             <div className="hero-panel__stats">
               {profileFacts.map(fact => (

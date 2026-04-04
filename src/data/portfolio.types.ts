@@ -8,9 +8,27 @@ export type FocusArea = {
 }
 
 export type SkillGroup = {
+  id: string
   title: string
   summary: string
   items: string[]
+  details?: SkillDetail[]
+}
+
+export type SkillDetail = {
+  name: string
+  summary: string
+  since: string
+  accent: 'blue' | 'purple' | 'amber' | 'green'
+  icon: string
+}
+
+export type LanguageSkill = {
+  name: string
+  started: string
+  level: string
+  note: string
+  badge: string
 }
 
 export type ExperienceItem = {
@@ -69,6 +87,9 @@ export type PortfolioContent = {
     primaryCtaHref: string
     secondaryCtaLabel: string
     secondaryCtaHref: string
+    imagePath?: string
+    imageAlt?: string
+    imageFallback: string
   }
   profileFacts: { label: string; value: string }[]
   proofPoints: string[]
@@ -102,15 +123,21 @@ export type PortfolioContent = {
     eyebrow: string
     title: string
     description: string
+    filterLabel: string
+    hardSkillsLabel: string
+    softSkillsLabel: string
+    languageSkillsLabel: string
   }
   skillGroups: SkillGroup[]
+  hardSkills?: string[]
+  softSkills?: string[]
+  languageSkillsDetailed?: LanguageSkill[]
   credentialsSection: {
     eyebrow: string
     title: string
     description: string
     educationLabel: string
     certificationsLabel: string
-    languagesLabel: string
     certificationsTitle: string
   }
   education: {
@@ -121,7 +148,6 @@ export type PortfolioContent = {
     details: string[]
   }
   certifications: string[]
-  languages: string[]
   contact: {
     eyebrow: string
     socialTitle: string

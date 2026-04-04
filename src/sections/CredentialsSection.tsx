@@ -8,7 +8,7 @@ type CredentialsSectionProps = {
 }
 
 export function CredentialsSection({ content }: CredentialsSectionProps) {
-  const { credentialsSection, education, certifications, languages } = content
+  const { credentialsSection, education, certifications } = content
 
   return (
     <section className="section" id="credentials">
@@ -62,17 +62,6 @@ export function CredentialsSection({ content }: CredentialsSectionProps) {
               {certifications.map(certification => (
                 <span className="tag" key={certification}>
                   {certification}
-                </span>
-              ))}
-            </div>
-
-            <div className="subsection-label">
-              {credentialsSection.languagesLabel}
-            </div>
-            <div className="tag-row">
-              {languages.map(language => (
-                <span className="tag" key={language}>
-                  {language}
                 </span>
               ))}
             </div>

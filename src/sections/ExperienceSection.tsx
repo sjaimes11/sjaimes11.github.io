@@ -1,19 +1,25 @@
 import { motion } from 'framer-motion'
 import { SectionTitle } from '../components/SectionTitle'
 import { ShellCard } from '../components/ShellCard'
-import { portfolioContent } from '../data/portfolio'
+import type { PortfolioContent } from '../data/portfolio'
 
-export function ExperienceSection() {
+type ExperienceSectionProps = {
+  content: PortfolioContent
+}
+
+export function ExperienceSection({ content }: ExperienceSectionProps) {
+  const { experienceSection, experience } = content
+
   return (
     <section className="section" id="experience">
       <SectionTitle
-        eyebrow="Experience"
-        title="Teaching, international collaboration, and platform ownership"
-        description="Your CV already shows more than coursework: you have teaching responsibilities, international project ownership, and exposure to AI application building."
+        eyebrow={experienceSection.eyebrow}
+        title={experienceSection.title}
+        description={experienceSection.description}
       />
 
       <div className="experience-grid">
-        {portfolioContent.experience.map((item, index) => (
+        {experience.map((item, index) => (
           <motion.div
             key={`${item.organization}-${item.role}`}
             initial={{ opacity: 0, y: 24 }}

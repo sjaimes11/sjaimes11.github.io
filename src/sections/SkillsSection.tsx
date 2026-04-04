@@ -1,19 +1,25 @@
 import { motion } from 'framer-motion'
 import { SectionTitle } from '../components/SectionTitle'
 import { ShellCard } from '../components/ShellCard'
-import { portfolioContent } from '../data/portfolio'
+import type { PortfolioContent } from '../data/portfolio'
 
-export function SkillsSection() {
+type SkillsSectionProps = {
+  content: PortfolioContent
+}
+
+export function SkillsSection({ content }: SkillsSectionProps) {
+  const { skillsSection, skillGroups } = content
+
   return (
     <section className="section" id="skills">
       <SectionTitle
-        eyebrow="Stack"
-        title="A stack that already aligns with product and platform teams"
-        description="This section now mirrors the technologies and engineering areas that appear across your software and AI-oriented CV versions."
+        eyebrow={skillsSection.eyebrow}
+        title={skillsSection.title}
+        description={skillsSection.description}
       />
 
       <div className="skills-grid">
-        {portfolioContent.skillGroups.map((group, index) => (
+        {skillGroups.map((group, index) => (
           <motion.div
             key={group.title}
             initial={{ opacity: 0, y: 22 }}

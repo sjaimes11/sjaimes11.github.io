@@ -1,19 +1,25 @@
 import { motion } from 'framer-motion'
 import { SectionTitle } from '../components/SectionTitle'
 import { ShellCard } from '../components/ShellCard'
-import { portfolioContent } from '../data/portfolio'
+import type { PortfolioContent } from '../data/portfolio'
 
-export function FocusSection() {
+type FocusSectionProps = {
+  content: PortfolioContent
+}
+
+export function FocusSection({ content }: FocusSectionProps) {
+  const { focusSection, focusAreas } = content
+
   return (
     <section className="section" id="focus">
       <SectionTitle
-        eyebrow="Focus"
-        title="The combination of skills this portfolio is designed to communicate"
-        description="This blends the structured professionalism of ahernandezt.com with the stronger atmosphere and premium feel of abhishektiwari.co."
+        eyebrow={focusSection.eyebrow}
+        title={focusSection.title}
+        description={focusSection.description}
       />
 
       <div className="focus-grid">
-        {portfolioContent.focusAreas.map((area, index) => (
+        {focusAreas.map((area, index) => (
           <motion.div
             key={area.title}
             initial={{ opacity: 0, y: 24 }}

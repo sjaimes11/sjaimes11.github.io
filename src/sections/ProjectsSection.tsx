@@ -1,19 +1,25 @@
 import { motion } from 'framer-motion'
 import { SectionTitle } from '../components/SectionTitle'
 import { ShellCard } from '../components/ShellCard'
-import { portfolioContent } from '../data/portfolio'
+import type { PortfolioContent } from '../data/portfolio'
 
-export function ProjectsSection() {
+type ProjectsSectionProps = {
+  content: PortfolioContent
+}
+
+export function ProjectsSection({ content }: ProjectsSectionProps) {
+  const { projectsSection, projects } = content
+
   return (
     <section className="section" id="projects">
       <SectionTitle
-        eyebrow="Projects"
-        title="Projects that show range across product, backend, data, and AI"
-        description="Instead of filler cards, this section now mirrors the strongest parts of your CV and gives recruiters concrete evidence of what you have built."
+        eyebrow={projectsSection.eyebrow}
+        title={projectsSection.title}
+        description={projectsSection.description}
       />
 
       <div className="projects-grid">
-        {portfolioContent.projects.map((project, index) => (
+        {projects.map((project, index) => (
           <motion.div
             key={project.title}
             initial={{ opacity: 0, y: 24 }}
@@ -53,7 +59,7 @@ export function ProjectsSection() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {project.linkLabel ?? 'Open project'}
+                  {project.linkLabel ?? projectsSection.openProjectLabel}
                 </a>
               ) : null}
             </ShellCard>

@@ -1,17 +1,21 @@
 import { motion } from 'framer-motion'
 import { SectionTitle } from '../components/SectionTitle'
 import { ShellCard } from '../components/ShellCard'
-import { portfolioContent } from '../data/portfolio'
+import type { PortfolioContent } from '../data/portfolio'
 
-export function CredentialsSection() {
-  const { education, certifications, languages } = portfolioContent
+type CredentialsSectionProps = {
+  content: PortfolioContent
+}
+
+export function CredentialsSection({ content }: CredentialsSectionProps) {
+  const { credentialsSection, education, certifications, languages } = content
 
   return (
     <section className="section" id="credentials">
       <SectionTitle
-        eyebrow="Credentials"
-        title="Education, certifications, and language range"
-        description="This gives recruiters a compact view of your academic base and the AI/ML training that strengthens your engineering profile."
+        eyebrow={credentialsSection.eyebrow}
+        title={credentialsSection.title}
+        description={credentialsSection.description}
       />
 
       <div className="credentials-grid">
@@ -24,7 +28,7 @@ export function CredentialsSection() {
           <ShellCard
             header={
               <div className="card-kicker">
-                <span>Education</span>
+                <span>{credentialsSection.educationLabel}</span>
               </div>
             }
           >
@@ -49,11 +53,11 @@ export function CredentialsSection() {
           <ShellCard
             header={
               <div className="card-kicker">
-                <span>Certifications</span>
+                <span>{credentialsSection.certificationsLabel}</span>
               </div>
             }
           >
-            <h3>NVIDIA and language credentials</h3>
+            <h3>{credentialsSection.certificationsTitle}</h3>
             <div className="tag-row">
               {certifications.map(certification => (
                 <span className="tag" key={certification}>
@@ -62,7 +66,9 @@ export function CredentialsSection() {
               ))}
             </div>
 
-            <div className="subsection-label">Languages</div>
+            <div className="subsection-label">
+              {credentialsSection.languagesLabel}
+            </div>
             <div className="tag-row">
               {languages.map(language => (
                 <span className="tag" key={language}>

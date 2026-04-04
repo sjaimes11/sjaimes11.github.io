@@ -1,15 +1,19 @@
 import { motion } from 'framer-motion'
 import { SectionTitle } from '../components/SectionTitle'
 import { ShellCard } from '../components/ShellCard'
-import { portfolioContent } from '../data/portfolio'
+import type { PortfolioContent } from '../data/portfolio'
 
-export function AboutSection() {
-  const { about } = portfolioContent
+type AboutSectionProps = {
+  content: PortfolioContent
+}
+
+export function AboutSection({ content }: AboutSectionProps) {
+  const { about } = content
 
   return (
     <section className="section" id="about">
       <SectionTitle
-        eyebrow="About"
+        eyebrow={about.eyebrow}
         title={about.title}
         description={about.description}
       />

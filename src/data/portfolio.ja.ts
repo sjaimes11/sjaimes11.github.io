@@ -1,0 +1,313 @@
+import { sharedProfile } from './portfolio.shared'
+import type { PortfolioContent } from './portfolio.types'
+
+export const portfolioJa: PortfolioContent = {
+  name: sharedProfile.name,
+  shortName: sharedProfile.shortName,
+  role: 'ソフトウェアエンジニア',
+  location: 'ボゴタ、コロンビア',
+  tagline: 'Web • Backend • AI Systems',
+  navigation: {
+    about: 'プロフィール',
+    strengths: '強み',
+    experience: '経験',
+    projects: 'プロジェクト',
+    stack: 'スキル',
+    credentials: '学歴',
+    contact: '連絡先',
+  },
+  controls: {
+    language: '言語',
+    themeLight: 'ライトモード',
+    themeDark: 'ダークモード',
+  },
+  hero: {
+    eyebrow: 'ポートフォリオ / ソフトウェアエンジニアリング',
+    title: 'バックエンド志向とプロダクト視点、AIの理解を持つフルスタックエンジニア。',
+    intro:
+      'Web プラットフォーム、モバイルアプリ、データフロー、クラウド基盤システムを設計からデプロイまで構築しています。',
+    note:
+      '特に、プロダクト実行力、バックエンドの信頼性、スケーラブルなシステムが重視されるソフトウェアエンジニア職に関心があります。Amadeus、Rappi、Mercado Libre のようなチームに興味があります。',
+    panelLabel: '現在のポジショニング',
+    panelDescription:
+      'フルスタック開発、クラウドデプロイ、データワークフロー、AI周辺システムに実践経験を持つプロフィールです。',
+    primaryCtaLabel: '主要プロジェクトを見る',
+    primaryCtaHref: '#projects',
+    secondaryCtaLabel: '連絡する',
+    secondaryCtaHref: '#contact',
+  },
+  profileFacts: [
+    { label: '卒業予定', value: '2026年7月' },
+    { label: '主な関心', value: 'Backend / Full-stack / Platform' },
+    { label: '差別化要素', value: 'AI・データ・実装力' },
+    { label: '国際経験', value: '東京、日本（ハイブリッド）' },
+  ],
+  proofPoints: [
+    'フルスタック実装',
+    'クラウドデプロイ',
+    'モバイル + Web',
+    'バックエンド API',
+    'AI / ML の実践知識',
+    '国際チーム経験',
+  ],
+  about: {
+    eyebrow: 'プロフィール',
+    title: 'プロダクト視点とAI理解を持つエンジニアリングプロフィール',
+    description: '軸はソフトウェアエンジニアリングであり、AI とデータの知識は現代的なプロダクトチームで価値を出すための強みです。',
+    paragraphs: [
+      '私の経験は、フルスタックプラットフォーム、モバイル開発、REST 連携、データベース設計、クラウドデプロイ、共同開発プロジェクトに広がっています。',
+      '特にバックエンド開発、分散システム、スケーラブルなソフトウェアプラットフォームに関心がありますが、フロントエンドやユーザー向け機能の実装も対応できます。',
+      'AI のティーチングアシスタントや NVIDIA の LLM ワークショップ支援を通じて、機械学習システム、開発者向けツール、技術コミュニケーションへの理解も深まりました。',
+    ],
+    metrics: [
+      { value: '100+', label: 'SEED Intranet の利用者数' },
+      { value: '4.37', label: 'Uniandes GPA / 5.0' },
+      { value: '日本', label: '国際協働の経験' },
+    ],
+  },
+  focusSection: {
+    eyebrow: '強み',
+    title: 'プロダクト、プラットフォーム、開発組織向けのプロフィール',
+    description: '実装力、システム思考、そして実践的なAIリテラシーを組み合わせています。',
+  },
+  focusAreas: [
+    {
+      label: 'ソフトウェアエンジニアリング',
+      title: '断片的なコードではなく、完成したプロダクトを届ける',
+      description:
+        'フロントエンド、バックエンド、データベース、デプロイまで横断して対応し、保守しやすく本番で役立つシステムを志向しています。',
+      bullets: [
+        'アーキテクチャとデータモデルから UI、デプロイまで一貫して実装します。',
+        'React、Angular、Flutter、Python、SQL、クラウドサービスを扱えます。',
+        'コード品質、可読性、コラボレーションを重視します。',
+      ],
+    },
+    {
+      label: 'バックエンドとシステム',
+      title: 'API、サービス、スケーラブルなプラットフォームへの強い関心',
+      description:
+        '私が最も惹かれるのは、信頼性、システムの振る舞い、ビジネスロジックが交わる領域です。',
+      bullets: [
+        '明確な契約と検証を意識してバックエンドフローを設計します。',
+        '保守性、データフロー、システム境界を考えて実装します。',
+        'プラットフォーム、travel-tech、マーケットプレイス領域に関心があります。',
+      ],
+    },
+    {
+      label: 'AI とデータ',
+      title: 'プロダクト開発を強化する AI / ML の実践力',
+      description:
+        'AI の経験は教育、ワークショップ、ML プロジェクト、ETL、実験を通じてソフトウェア開発を補強する形で積んできました。',
+      bullets: [
+        '人工知能入門のティーチングアシスタント。',
+        'NVIDIA ワークショップでプロンプト設計と LLM アプリ開発を支援。',
+        'ML モデル、ETL ワークフロー、分析ツールの経験。',
+      ],
+    },
+  ],
+  experienceSection: {
+    eyebrow: '経験',
+    title: '教育、国際協働、プラットフォームのオーナーシップ',
+    description: '教育経験、国際プロジェクトのオーナーシップ、AI 応用への実践的な関与があります。',
+  },
+  experience: [
+    {
+      organization: 'Universidad de los Andes',
+      role: 'ティーチングアシスタント - Introduction to Artificial Intelligence',
+      period: '2026年 - 現在',
+      location: 'ボゴタ、コロンビア',
+      bullets: [
+        '機械学習、探索アルゴリズム、論理、Python の問題解決を学生にサポートしました。',
+        'AI とソフトウェア開発に関する教材作成とワークショップ支援を担当しました。',
+        '複雑な概念を明確かつ実践的に説明することで技術コミュニケーション力を高めました。',
+      ],
+    },
+    {
+      organization: 'GOROM Association',
+      role: 'IT Coordinator',
+      period: '2025年8月 - 2025年12月',
+      location: '東京、日本（ハイブリッド）',
+      bullets: [
+        'イントラネット開発、Web 運用、戦略的コンテンツ企画を含む IT とデジタルプラットフォーム運営を担当しました。',
+        'SEED 参加者と alumni 向けのイントラネット Web アプリを構築・保守しました。',
+        'React、Django、REST API を用いて Web プラットフォームの開発と保守を行いました。',
+      ],
+    },
+    {
+      organization: 'NVIDIA Deep Learning Institute / Universidad de los Andes',
+      role: 'Teaching Assistant - Building LLM Applications With Prompt Engineering',
+      period: '2025年8月',
+      location: 'ボゴタ、コロンビア',
+      bullets: [
+        'LLM アプリ構築ワークショップで参加者を支援しました。',
+        'LangChain、Llama、構造化出力、ツール利用に関する技術サポートを提供しました。',
+        '実践的な AI システム構築と技術教育をつなぐ役割を果たしました。',
+      ],
+    },
+    {
+      organization: 'SEED Program - GOROM Japan',
+      role: '国際ソーシャルアントレプレナーシッププログラム',
+      period: '2025年7月 - 2025年12月',
+      location: '日本',
+      bullets: [
+        '観光の可視性と地域経済活動を高めるためのデジタルプラットフォーム案を開発しました。',
+        '国際的な協働環境でユーザー行動、市場動向、事業戦略を分析しました。',
+        'ステークホルダーへの提案と、技術・非技術の両文脈での連携を行いました。',
+      ],
+    },
+  ],
+  projectsSection: {
+    eyebrow: 'プロジェクト',
+    title: 'プロダクト、バックエンド、データ、AI を横断する実績',
+    description: 'プロダクト構築、システム設計、技術的な深さを示す具体的な実績です。',
+    openProjectLabel: 'プロジェクトを開く',
+  },
+  projects: [
+    {
+      category: 'フルスタックプラットフォーム',
+      title: 'SEED Intranet',
+      year: '2024',
+      description: '国際プログラム参加者向けのコラボレーションプラットフォームを、実運用を意識したフルスタックシステムとして構築しました。',
+      outcomes: [
+        'フォーラム、ドキュメント、カレンダー、プロフィール、コミュニティディレクトリを構築しました。',
+        'MySQL と Auth0 を用いたバックエンドサービス、認証、DB 統合を実装しました。',
+        'DigitalOcean と AWS を使って 100 人以上向けにデプロイしました。',
+      ],
+      stack: ['React', 'Django', 'REST APIs', 'MySQL', 'Auth0', 'DigitalOcean', 'AWS'],
+    },
+    {
+      category: 'モバイルアプリ',
+      title: 'Ecosphere',
+      year: '2024',
+      description: 'コミュニティ機能と位置情報機能を通じてリサイクルを促進する Flutter アプリです。',
+      outcomes: [
+        '認証、コミュニティ投稿、リサイクル地点マップ、リワード機能を実装しました。',
+        'Firebase Authentication と Firestore を統合しました。',
+        'Git と Agile 開発の中でチーム協働しました。',
+      ],
+      stack: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'Google Maps API'],
+    },
+    {
+      category: 'フロントエンド Web アプリ',
+      title: 'MedicIA',
+      year: '2024',
+      description: 'Angular を用いたフロントエンド設計と API 統合に注力した AI 医療支援プラットフォームです。',
+      outcomes: [
+        'UI コンポーネント、ルーティング、フロントエンド構成を実装しました。',
+        'REST API とフロントエンド / バックエンド統合を担当しました。',
+        'AI 指向の機能を持つプロダクトにエンジニアリング視点で貢献しました。',
+      ],
+      stack: ['Angular', 'TypeScript', 'HTML', 'CSS', 'REST APIs'],
+    },
+    {
+      category: 'データエンジニアリング',
+      title: 'ETL Pipeline and Demographic Dashboarding',
+      year: '2024',
+      description: '大規模データを意思決定向けダッシュボードへ変換する自動処理パイプラインを構築しました。',
+      outcomes: [
+        'Python と BigQuery で大規模データ処理用 ETL パイプラインを設計しました。',
+        'データクリーニング、変換、モデリングを実施しました。',
+        'Power BI と Tableau でダッシュボードを構築しました。',
+      ],
+      stack: ['Python', 'BigQuery', 'Power BI', 'Tableau', 'Data modeling'],
+    },
+    {
+      category: '機械学習',
+      title: 'Protein Thermal Stability Prediction',
+      year: '2025',
+      description: 'タンパク質の融解温度を予測する機械学習研究プロジェクトです。',
+      outcomes: [
+        'ProtT5、ProtBERT、SeqVec を扱いました。',
+        'Random Forest、SVR、XGBoost、Neural Networks を実装しました。',
+        'ML の実践力を高めつつ、ソフトウェアエンジニアリングを主軸に保ちました。',
+      ],
+      stack: ['Python', 'scikit-learn', 'XGBoost', 'Neural Networks', 'Embeddings'],
+    },
+  ],
+  skillsSection: {
+    eyebrow: 'スキル',
+    title: 'プロダクトとプラットフォームチームに合う技術スタック',
+    description: 'ソフトウェア開発と AI 関連プロジェクトの両方に現れている技術領域です。',
+  },
+  skillGroups: [
+    {
+      title: 'プログラミング',
+      summary: '学業、プロダクト、プロジェクトで使ってきた言語です。',
+      items: ['Python', 'Java', 'JavaScript', 'TypeScript', 'Dart', 'C++', 'SQL'],
+    },
+    {
+      title: 'フロントエンド / モバイル',
+      summary: 'Web とモバイルのユーザー向け開発です。',
+      items: ['React', 'Angular', 'HTML', 'CSS', 'Flutter'],
+    },
+    {
+      title: 'バックエンド / データ',
+      summary: 'サービスロジック、API、パイプライン、永続化層です。',
+      items: ['Django', 'FastAPI', 'Spring Boot', 'REST APIs', 'MySQL', 'Firebase', 'BigQuery'],
+    },
+    {
+      title: 'クラウド / ツール',
+      summary: '実案件で使ったインフラと開発ツールです。',
+      items: ['AWS', 'DigitalOcean', 'Google Cloud', 'Docker', 'Git', 'Databricks'],
+    },
+    {
+      title: 'AI / ML',
+      summary: '機械学習と AI エンジニアリングの基礎です。',
+      items: ['Machine Learning', 'Deep Learning', 'LLMs', 'LangChain', 'LangGraph', 'RAG'],
+    },
+    {
+      title: '可視化 / 分析',
+      summary: '処理済みデータを意思決定可能な形に変えるための技術です。',
+      items: ['Power BI', 'Tableau', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Streamlit'],
+    },
+  ],
+  credentialsSection: {
+    eyebrow: '学歴',
+    title: '学歴、認定、言語対応',
+    description: '学術的基盤と、エンジニアリング力を補強する AI / ML トレーニングの概要です。',
+    educationLabel: '学歴',
+    certificationsLabel: '認定',
+    languagesLabel: '言語',
+    certificationsTitle: 'NVIDIA と語学の認定',
+  },
+  education: {
+    institution: 'Universidad de los Andes',
+    degree: 'Systems and Computing Engineering 学士課程',
+    period: '2022年 - 2026年7月予定',
+    location: 'ボゴタ、コロンビア',
+    details: [
+      'バックエンド、分散システム、AI、スケーラブルなソフトウェアプラットフォームに強い関心があります。',
+      '人工知能の教育経験と、LLM アプリケーション開発ワークショップの支援経験があります。',
+      'ソフトウェアエンジニアリング、データ、システム思考を組み合わせた学術背景です。',
+    ],
+  },
+  certifications: [
+    'NVIDIA DLI - Fundamentals of Deep Learning',
+    'NVIDIA - Generative AI and Large Language Models',
+    'NVIDIA - Building Transformer-Based NLP Applications',
+    'NVIDIA - Building LLM Applications With Prompt Engineering',
+    'NVIDIA - Efficient Large Language Model Customization',
+    'IELTS Academic C1',
+  ],
+  languages: ['スペイン語（母語）', '英語（上級）', '日本語（初級）'],
+  contact: {
+    eyebrow: '次のステップ',
+    socialTitle: 'つながる',
+    terminalTitle: 'mail_client.ts',
+    statusTitle: 'システム状態',
+    availability: 'ソフトウェアエンジニア職に応募可能です',
+    availabilityNote: 'バックエンド、フルスタック、プラットフォーム志向の機会を歓迎します。',
+    primaryEmail: sharedProfile.primaryEmail,
+    secondaryEmail: sharedProfile.secondaryEmail,
+    phone: sharedProfile.phone,
+    terminalCommand: `await connect("${sharedProfile.primaryEmail}");`,
+    terminalButton: 'INITIALIZE',
+    socialLinks: [
+      { label: 'LinkedIn', value: 'linkedin.com/in/santiago-jaimes-puerto', href: sharedProfile.linkedin },
+      { label: 'GitHub', value: 'github.com/sjaimes11', href: sharedProfile.github },
+      { label: 'Gmail', value: sharedProfile.primaryEmail, href: `mailto:${sharedProfile.primaryEmail}` },
+      { label: '所在地', value: 'ボゴタ、コロンビア', href: '#top' },
+    ],
+  },
+  footer: 'React、TypeScript、そしてソフトウェアエンジニアリング中心の構成で作成しました。',
+}

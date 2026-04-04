@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion'
-import { portfolioContent } from '../data/portfolio'
+import type { PortfolioContent } from '../data/portfolio'
 
-export function HeroSection() {
-  const { hero, role, profileFacts } = portfolioContent
+type HeroSectionProps = {
+  content: PortfolioContent
+}
+
+export function HeroSection({ content }: HeroSectionProps) {
+  const { hero, role, profileFacts } = content
 
   return (
     <section className="hero-section section">
@@ -37,13 +41,9 @@ export function HeroSection() {
         >
           <div className="hero-panel__grid" />
           <div className="hero-panel__content">
-            <span className="hero-panel__label">Current positioning</span>
+            <span className="hero-panel__label">{hero.panelLabel}</span>
             <h2>{role}</h2>
-            <p>
-              Software engineering profile with hands-on experience across
-              full-stack platforms, cloud deployment, data workflows, and
-              AI-adjacent systems.
-            </p>
+            <p>{hero.panelDescription}</p>
 
             <div className="hero-panel__stats">
               {profileFacts.map(fact => (

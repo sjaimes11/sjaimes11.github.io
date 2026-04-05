@@ -189,10 +189,17 @@ export const portfolioEn: PortfolioContent = {
     eyebrow: 'Projects',
     title: 'Projects that show range across product, backend, data, and AI',
     description: 'Concrete evidence of products, systems, and technical depth.',
+    allLabel: 'All Projects',
+    featuredLabel: 'Featured project',
+    prevLabel: 'Previous project',
+    nextLabel: 'Next project',
     openProjectLabel: 'Open project',
   },
   projects: [
     {
+      group: 'Web platforms',
+      visual: 'web',
+      tone: 'blue',
       category: 'Full-stack platform',
       title: 'SEED Intranet',
       year: '2024',
@@ -205,6 +212,9 @@ export const portfolioEn: PortfolioContent = {
       stack: ['React', 'Django', 'REST APIs', 'MySQL', 'Auth0', 'DigitalOcean', 'AWS'],
     },
     {
+      group: 'Mobile apps',
+      visual: 'mobile',
+      tone: 'green',
       category: 'Mobile application',
       title: 'Ecosphere',
       year: '2024',
@@ -217,6 +227,9 @@ export const portfolioEn: PortfolioContent = {
       stack: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'Google Maps API'],
     },
     {
+      group: 'Web platforms',
+      visual: 'ai',
+      tone: 'violet',
       category: 'Frontend web application',
       title: 'MedicIA',
       year: '2024',
@@ -229,6 +242,9 @@ export const portfolioEn: PortfolioContent = {
       stack: ['Angular', 'TypeScript', 'HTML', 'CSS', 'REST APIs'],
     },
     {
+      group: 'Data and analytics',
+      visual: 'data',
+      tone: 'amber',
       category: 'Data engineering',
       title: 'ETL Pipeline and Demographic Dashboarding',
       year: '2024',
@@ -241,6 +257,9 @@ export const portfolioEn: PortfolioContent = {
       stack: ['Python', 'BigQuery', 'Power BI', 'Tableau', 'Data modeling'],
     },
     {
+      group: 'AI and research',
+      visual: 'ai',
+      tone: 'violet',
       category: 'Machine learning',
       title: 'Protein Thermal Stability Prediction',
       year: '2025',

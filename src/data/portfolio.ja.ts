@@ -189,10 +189,17 @@ export const portfolioJa: PortfolioContent = {
     eyebrow: 'プロジェクト',
     title: 'プロダクト、バックエンド、データ、AI を横断する実績',
     description: 'プロダクト構築、システム設計、技術的な深さを示す具体的な実績です。',
+    allLabel: 'すべて',
+    featuredLabel: '注目プロジェクト',
+    prevLabel: '前のプロジェクト',
+    nextLabel: '次のプロジェクト',
     openProjectLabel: 'プロジェクトを開く',
   },
   projects: [
     {
+      group: 'Web プラットフォーム',
+      visual: 'web',
+      tone: 'blue',
       category: 'フルスタックプラットフォーム',
       title: 'SEED Intranet',
       year: '2024',
@@ -205,6 +212,9 @@ export const portfolioJa: PortfolioContent = {
       stack: ['React', 'Django', 'REST APIs', 'MySQL', 'Auth0', 'DigitalOcean', 'AWS'],
     },
     {
+      group: 'モバイルアプリ',
+      visual: 'mobile',
+      tone: 'green',
       category: 'モバイルアプリ',
       title: 'Ecosphere',
       year: '2024',
@@ -217,6 +227,9 @@ export const portfolioJa: PortfolioContent = {
       stack: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'Google Maps API'],
     },
     {
+      group: 'Web プラットフォーム',
+      visual: 'ai',
+      tone: 'violet',
       category: 'フロントエンド Web アプリ',
       title: 'MedicIA',
       year: '2024',
@@ -229,6 +242,9 @@ export const portfolioJa: PortfolioContent = {
       stack: ['Angular', 'TypeScript', 'HTML', 'CSS', 'REST APIs'],
     },
     {
+      group: 'データと分析',
+      visual: 'data',
+      tone: 'amber',
       category: 'データエンジニアリング',
       title: 'ETL Pipeline and Demographic Dashboarding',
       year: '2024',
@@ -241,6 +257,9 @@ export const portfolioJa: PortfolioContent = {
       stack: ['Python', 'BigQuery', 'Power BI', 'Tableau', 'Data modeling'],
     },
     {
+      group: 'AI と研究',
+      visual: 'ai',
+      tone: 'violet',
       category: '機械学習',
       title: 'Protein Thermal Stability Prediction',
       year: '2025',

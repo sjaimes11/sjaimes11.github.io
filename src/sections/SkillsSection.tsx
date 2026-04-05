@@ -39,6 +39,7 @@ export function SkillsSection({ content }: SkillsSectionProps) {
         eyebrow={skillsSection.eyebrow}
         title={skillsSection.title}
         description={skillsSection.description}
+        icon="skills"
       />
 
       <div className="skills-showcase">

@@ -65,6 +65,9 @@ export type ExperienceItem = {
 }
 
 export type ProjectItem = {
+  group: string
+  visual: 'web' | 'mobile' | 'data' | 'ai'
+  tone: 'blue' | 'amber' | 'violet' | 'green'
   title: string
   category: string
   year: string
@@ -145,6 +148,10 @@ export type PortfolioContent = {
     eyebrow: string
     title: string
     description: string
+    allLabel: string
+    featuredLabel: string
+    prevLabel: string
+    nextLabel: string
     openProjectLabel: string
   }
   projects: ProjectItem[]

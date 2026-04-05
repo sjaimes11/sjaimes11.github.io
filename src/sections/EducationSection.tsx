@@ -16,6 +16,7 @@ export function EducationSection({ content }: EducationSectionProps) {
         eyebrow={educationSection.eyebrow}
         title={educationSection.title}
         description={educationSection.description}
+        icon="education"
       />
 
       <motion.div

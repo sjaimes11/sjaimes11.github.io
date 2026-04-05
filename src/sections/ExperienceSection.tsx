@@ -16,6 +16,7 @@ export function ExperienceSection({ content }: ExperienceSectionProps) {
         eyebrow={experienceSection.eyebrow}
         title={experienceSection.title}
         description={experienceSection.description}
+        icon="experience"
       />
 
       <div className="experience-grid">

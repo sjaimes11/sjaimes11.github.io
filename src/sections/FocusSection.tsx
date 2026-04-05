@@ -16,6 +16,7 @@ export function FocusSection({ content }: FocusSectionProps) {
         eyebrow={focusSection.eyebrow}
         title={focusSection.title}
         description={focusSection.description}
+        icon="strengths"
       />
 
       <div className="focus-grid">

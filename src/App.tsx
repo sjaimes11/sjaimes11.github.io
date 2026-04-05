@@ -15,6 +15,7 @@ import { FocusSection } from './sections/FocusSection'
 import { HeroSection } from './sections/HeroSection'
 import { ProjectsSection } from './sections/ProjectsSection'
 import { SkillsSection } from './sections/SkillsSection'
+import { SiteIcon, type IconName } from './components/SiteIcon'
 
 type ThemeMode = 'dark' | 'light'
 
@@ -28,6 +29,20 @@ export default function App() {
   const [theme, setTheme] = useState<ThemeMode>('dark')
   const content = portfolioContentByLocale[locale]
   const year = new Date().getFullYear()
+  const navItems: Array<{ id: string; label: string; icon: IconName }> = [
+    { id: 'about', label: content.navigation.about, icon: 'about' },
+    { id: 'focus', label: content.navigation.strengths, icon: 'strengths' },
+    { id: 'experience', label: content.navigation.experience, icon: 'experience' },
+    { id: 'projects', label: content.navigation.projects, icon: 'projects' },
+    { id: 'skills', label: content.navigation.stack, icon: 'skills' },
+    { id: 'education', label: content.navigation.education, icon: 'education' },
+    {
+      id: 'certifications',
+      label: content.navigation.certifications,
+      icon: 'certifications',
+    },
+    { id: 'contact', label: content.navigation.contact, icon: 'contact' },
+  ]
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme
@@ -51,14 +66,12 @@ export default function App() {
           </a>
 
           <nav className="top-nav" aria-label="Primary">
-            <a href="#about">{content.navigation.about}</a>
-            <a href="#focus">{content.navigation.strengths}</a>
-            <a href="#experience">{content.navigation.experience}</a>
-            <a href="#projects">{content.navigation.projects}</a>
-            <a href="#skills">{content.navigation.stack}</a>
-            <a href="#education">{content.navigation.education}</a>
-            <a href="#certifications">{content.navigation.certifications}</a>
-            <a href="#contact">{content.navigation.contact}</a>
+            {navItems.map(item => (
+              <a className="top-nav__link" href={`#${item.id}`} key={item.id}>
+                <SiteIcon name={item.icon} />
+                <span>{item.label}</span>
+              </a>
+            ))}
           </nav>
 
           <div className="header-controls">

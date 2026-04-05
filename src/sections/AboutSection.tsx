@@ -16,6 +16,7 @@ export function AboutSection({ content }: AboutSectionProps) {
         eyebrow={about.eyebrow}
         title={about.title}
         description={about.description}
+        icon="about"
       />
 
       <div className="about-grid">

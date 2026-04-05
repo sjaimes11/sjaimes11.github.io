@@ -34,6 +34,7 @@ export function CertificationsSection({
         eyebrow={certificationsSection.eyebrow}
         title={certificationsSection.title}
         description={certificationsSection.description}
+        icon="certifications"
       />
 
       <motion.div

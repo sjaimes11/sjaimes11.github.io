@@ -13,7 +13,8 @@ export const portfolioJa: PortfolioContent = {
     experience: '経験',
     projects: 'プロジェクト',
     stack: 'スキル',
-    credentials: '学歴',
+    education: '学歴',
+    certifications: '認定',
     contact: '連絡先',
   },
   controls: {
@@ -320,43 +321,142 @@ export const portfolioJa: PortfolioContent = {
     { name: 'English', started: 'Started 2012', level: 'Advanced', note: 'IELTS Academic C1.', badge: 'EN' },
     { name: 'Japanese', started: 'Started 2024', level: 'Basic', note: 'Growing through study and international collaboration.', badge: 'JP' },
   ],
-  credentialsSection: {
+  educationSection: {
     eyebrow: '学歴',
-    title: '学歴と認定',
-    description: '学術的基盤と、エンジニアリング力を補強する認定の概要です。',
-    educationLabel: '学歴',
-    certificationsLabel: '認定',
-    certificationsTitle: 'NVIDIA と語学の認定',
+    title: '学術的な歩みとエンジニアとしての成長',
+    description: '工学の基礎からソフトウェアとシステム志向のプロフィールへ移っていく過程が分かる、時系列の学歴です。',
+  },
+  certificationsSection: {
+    eyebrow: '認定',
+    title: 'AI と英語力を補強する資格',
+    description: '深層学習、NLP、LLM アプリ開発、英語運用力を実践面から支える NVIDIA DLI と IELTS の認定です。',
+    featuredLabel: '注目の認定',
+    prevLabel: 'Prev',
+    nextLabel: 'Next',
   },
   education: [
     {
       institution: 'Universidad de los Andes',
       degree: 'B.Sc. Systems and Computing Engineering',
-      period: 'Jan 2020 - Jul 2026',
+      period: 'Jan 2020 - Present',
       location: 'Bogota, Colombia',
-    },
-    {
-      institution: 'Universidad de los Andes',
-      degree: 'B.Sc. Electrical Engineering',
-      period: 'Jan 2020 - Jul 2025',
-      location: 'Bogota, Colombia',
+      gpa: 'GPA: 4.37 / 5.0 (current)',
+      details: [
+        '現在のソフトウェア志向のプロフィールを最もよく表す専攻です。',
+        'バックエンド、分散システム、データ、スケーラブルなソフトウェアプラットフォームへの関心が最も強く反映されています。',
+        'ソフトウェアエンジニアリング、プロダクト実装、システム思考を最も明確につなぐ学位です。',
+      ],
+      iconPath: '/andes.jpg',
+      iconAlt: 'Universidad de los Andes logo',
     },
     {
       institution: 'Universidad de los Andes',
       degree: 'B.Sc. Electronical Engineering',
       period: 'Jan 2020 - Apr 2026',
       location: 'Bogota, Colombia',
+      gpa: 'GPA: 4.37 / 5.0',
+      details: [
+        '電子工学、技術的な厳密さ、設計制約への理解を深めました。',
+        'ソフトウェアと現実世界の実装が接続されるシステムの捉え方に厚みを加えました。',
+        '学際的な工学分野での分析的思考をより強化しました。',
+      ],
+      iconPath: '/andes.jpg',
+      iconAlt: 'Universidad de los Andes logo',
+    },
+    {
+      institution: 'Universidad de los Andes',
+      degree: 'B.Sc. Electrical Engineering',
+      period: 'Jan 2020 - Jul 2025',
+      location: 'Bogota, Colombia',
+      gpa: 'GPA: 4.33 / 5.0',
+      details: [
+        '定量分析、モデリング、システム視点の強い基盤を築きました。',
+        '構造的な技術課題解決のための基礎を広げました。',
+        '現在のソフトウェア志向を補完する、より初期の学習段階を表しています。',
+      ],
+      iconPath: '/andes.jpg',
+      iconAlt: 'Universidad de los Andes logo',
+    },
+    {
+      institution: 'Colegio Bilingue La Ensenanza',
+      degree: 'High School Diploma',
+      period: 'Jan 2009 - Nov 2018',
+      location: 'Bogota, Bogota D.C., Colombia',
+      gpa: 'GPA: 4.4 / 5.0',
+      details: [
+        'バイリンガル教育を通じて、コミュニケーション力と学習規律の基礎を築きました。',
+        '工学進学前の最も初期の正式な教育段階です。',
+        '大学以降にも続く学業の一貫性を支えた出発点でした。',
+      ],
+      iconPath: '/colegio.png',
+      iconAlt: 'Colegio Bilingue La Ensenanza logo',
     },
   ],
   certifications: [
-    'NVIDIA DLI - Generative AI with Diffusion Models',
-    'NVIDIA DLI - Applications of AI for Anomaly Detection',
-    'NVIDIA DLI - Rapid Application Development with Large Language Models (LLMs)',
-    'NVIDIA DLI - Efficient Large Language Model (LLM) Customization',
-    'NVIDIA DLI - Building LLM Applications With Prompt Engineering',
-    'NVIDIA DLI - Building Transformer-Based Natural Language Processing Applications',
-    'NVIDIA DLI - Fundamentals of Deep Learning',
-    'IELTS Academic C1',
+    {
+      provider: 'NVIDIA DLI',
+      title: 'Generative AI with Diffusion Models',
+      summary:
+        '拡散モデル、U-Net、CLIP、テキストから画像を生成する基礎パイプラインを学びました。',
+      iconPath: '/nvidia_logo.jpg',
+      iconAlt: 'NVIDIA DLI logo',
+    },
+    {
+      provider: 'NVIDIA DLI',
+      title: 'Applications of AI for Anomaly Detection',
+      summary:
+        'XGBoost、オートエンコーダ、GAN を使った異常検知のワークフローを扱いました。',
+      iconPath: '/nvidia_logo.jpg',
+      iconAlt: 'NVIDIA DLI logo',
+    },
+    {
+      provider: 'NVIDIA DLI',
+      title: 'Rapid Application Development with Large Language Models (LLMs)',
+      summary:
+        'Hugging Face、Transformers、LangChain、エージェント的な構成を使った LLM アプリ開発を学びました。',
+      iconPath: '/nvidia_logo.jpg',
+      iconAlt: 'NVIDIA DLI logo',
+    },
+    {
+      provider: 'NVIDIA DLI',
+      title: 'Efficient Large Language Model (LLM) Customization',
+      summary:
+        'パラメータ効率の良い LLM カスタマイズ、合成データ生成、NVIDIA NeMo を使った適応方法を学びました。',
+      iconPath: '/nvidia_logo.jpg',
+      iconAlt: 'NVIDIA DLI logo',
+    },
+    {
+      provider: 'NVIDIA DLI',
+      title: 'Building LLM Applications With Prompt Engineering',
+      summary:
+        '反復的なプロンプト設計、LangChain フロー、NVIDIA NIM、Llama 3.1 を使った実践的な LLM アプリ構築です。',
+      iconPath: '/nvidia_logo.jpg',
+      iconAlt: 'NVIDIA DLI logo',
+    },
+    {
+      provider: 'NVIDIA DLI',
+      title: 'Building Transformer-Based Natural Language Processing Applications',
+      summary:
+        'NER、分類、質問応答、推論向けデプロイなど、Transformer を使った NLP 応用を扱いました。',
+      iconPath: '/nvidia_logo.jpg',
+      iconAlt: 'NVIDIA DLI logo',
+    },
+    {
+      provider: 'NVIDIA DLI',
+      title: 'Fundamentals of Deep Learning',
+      summary:
+        'PyTorch、CNN、データ拡張、転移学習、ニューラルネットワークの実践基礎を学びました。',
+      iconPath: '/nvidia_logo.jpg',
+      iconAlt: 'NVIDIA DLI logo',
+    },
+    {
+      provider: 'IELTS',
+      title: 'IELTS Academic C1',
+      summary:
+        '学術環境での reading、writing、listening、speaking を含む上級英語力を証明する資格です。',
+      iconPath: '/IELTS.png',
+      iconAlt: 'IELTS logo',
+    },
   ],
   contact: {
     eyebrow: '次のステップ',

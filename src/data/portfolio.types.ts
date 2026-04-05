@@ -42,6 +42,18 @@ export type EducationEntry = {
   degree: string
   period: string
   location: string
+  gpa: string
+  details: string[]
+  iconPath: string
+  iconAlt: string
+}
+
+export type CertificationEntry = {
+  provider: string
+  title: string
+  summary: string
+  iconPath: string
+  iconAlt: string
 }
 
 export type ExperienceItem = {
@@ -81,7 +93,8 @@ export type PortfolioContent = {
     experience: string
     projects: string
     stack: string
-    credentials: string
+    education: string
+    certifications: string
     contact: string
   }
   controls: {
@@ -148,16 +161,21 @@ export type PortfolioContent = {
   hardSkills?: string[]
   softSkills?: string[]
   languageSkillsDetailed?: LanguageSkill[]
-  credentialsSection: {
+  educationSection: {
     eyebrow: string
     title: string
     description: string
-    educationLabel: string
-    certificationsLabel: string
-    certificationsTitle: string
+  }
+  certificationsSection: {
+    eyebrow: string
+    title: string
+    description: string
+    featuredLabel: string
+    prevLabel: string
+    nextLabel: string
   }
   education: EducationEntry[]
-  certifications: string[]
+  certifications: CertificationEntry[]
   contact: {
     eyebrow: string
     socialTitle: string

@@ -7,8 +7,9 @@ import {
   type Locale,
 } from './data/portfolio'
 import { AboutSection } from './sections/AboutSection'
+import { CertificationsSection } from './sections/CertificationsSection'
 import { ContactSection } from './sections/ContactSection'
-import { CredentialsSection } from './sections/CredentialsSection'
+import { EducationSection } from './sections/EducationSection'
 import { ExperienceSection } from './sections/ExperienceSection'
 import { FocusSection } from './sections/FocusSection'
 import { HeroSection } from './sections/HeroSection'
@@ -55,7 +56,8 @@ export default function App() {
             <a href="#experience">{content.navigation.experience}</a>
             <a href="#projects">{content.navigation.projects}</a>
             <a href="#skills">{content.navigation.stack}</a>
-            <a href="#credentials">{content.navigation.credentials}</a>
+            <a href="#education">{content.navigation.education}</a>
+            <a href="#certifications">{content.navigation.certifications}</a>
             <a href="#contact">{content.navigation.contact}</a>
           </nav>
 
@@ -116,7 +118,8 @@ export default function App() {
         <ExperienceSection content={content} />
         <ProjectsSection content={content} />
         <SkillsSection content={content} />
-        <CredentialsSection content={content} />
+        <EducationSection content={content} />
+        <CertificationsSection content={content} />
         <ContactSection content={content} />
       </main>
 

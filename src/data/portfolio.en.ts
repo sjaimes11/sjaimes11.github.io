@@ -13,7 +13,8 @@ export const portfolioEn: PortfolioContent = {
     experience: 'Experience',
     projects: 'Projects',
     stack: 'Skills',
-    credentials: 'Academic',
+    education: 'Education',
+    certifications: 'Certifications',
     contact: 'Contact',
   },
   controls: {
@@ -367,13 +368,18 @@ export const portfolioEn: PortfolioContent = {
     { name: 'English', started: 'Started 2012', level: 'Advanced', note: 'IELTS Academic C1.', badge: 'EN' },
     { name: 'Japanese', started: 'Started 2024', level: 'Basic', note: 'Growing through study and international collaboration.', badge: 'JP' },
   ],
-  credentialsSection: {
-    eyebrow: 'Academic',
-    title: 'Education and certifications',
-    description: 'A compact view of my academic base and the certifications that strengthen my engineering profile.',
-    educationLabel: 'Education',
-    certificationsLabel: 'Certifications',
-    certificationsTitle: 'NVIDIA and language credentials',
+  educationSection: {
+    eyebrow: 'Education',
+    title: 'Academic path and engineering progression',
+    description: 'A chronological view of the degrees and institutions that shaped how I moved from general engineering foundations into software systems.',
+  },
+  certificationsSection: {
+    eyebrow: 'Certifications',
+    title: 'Industry credentials that reinforce my AI and language profile',
+    description: 'Selected NVIDIA DLI and IELTS certifications that strengthened my practical understanding of deep learning, NLP, LLM applications, and English proficiency.',
+    featuredLabel: 'Featured certification',
+    prevLabel: 'Prev',
+    nextLabel: 'Next',
   },
   education: [
     {
@@ -381,29 +387,123 @@ export const portfolioEn: PortfolioContent = {
       degree: 'B.Sc. Systems and Computing Engineering',
       period: 'Jan 2020 - Jul 2026',
       location: 'Bogota, Colombia',
-    },
-    {
-      institution: 'Universidad de los Andes',
-      degree: 'B.Sc. Electrical Engineering',
-      period: 'Jan 2020 - Jul 2025',
-      location: 'Bogota, Colombia',
+      gpa: 'GPA: 4.37 / 5.0 (current)',
+      details: [
+        'My strongest academic emphasis and the degree that best represents the software profile I want to project.',
+        'Focused on backend development, distributed systems, data workflows, and scalable software platforms.',
+        'Connects software engineering, product implementation, and systems thinking in the clearest way.',
+      ],
+      iconPath: '/andes.jpg',
+      iconAlt: 'Universidad de los Andes logo',
     },
     {
       institution: 'Universidad de los Andes',
       degree: 'B.Sc. Electronical Engineering',
       period: 'Jan 2020 - Apr 2026',
       location: 'Bogota, Colombia',
+      gpa: 'GPA: 4.37 / 5.0',
+      details: [
+        'Strengthened my understanding of electronics, technical rigor, and engineering design constraints.',
+        'Added depth to how I reason about systems that connect software with real-world devices and implementations.',
+        'Reinforced disciplined analytical thinking across multidisciplinary engineering work.',
+      ],
+      iconPath: '/andes.jpg',
+      iconAlt: 'Universidad de los Andes logo',
+    },
+    {
+      institution: 'Universidad de los Andes',
+      degree: 'B.Sc. Electrical Engineering',
+      period: 'Jan 2020 - Jul 2025',
+      location: 'Bogota, Colombia',
+      gpa: 'GPA: 4.33 / 5.0',
+      details: [
+        'Built a strong quantitative and systems-oriented base early in my engineering path.',
+        'Expanded my foundation in mathematical modeling, analysis, and structured problem solving.',
+        'Represents an earlier stage of my trajectory that still complements my current software focus.',
+      ],
+      iconPath: '/andes.jpg',
+      iconAlt: 'Universidad de los Andes logo',
+    },
+    {
+      institution: 'Colegio Bilingue La Ensenanza',
+      degree: 'High School Diploma',
+      period: 'Jan 2009 - Nov 2018',
+      location: 'Bogota, Bogota D.C., Colombia',
+      gpa: 'GPA: 4.4 / 5.0',
+      details: [
+        'Bilingual school foundation that shaped my communication skills and academic discipline.',
+        'Represents the earliest formal stage of my academic trajectory before engineering.',
+        'Helped build the long-term consistency that later carried into university studies.',
+      ],
+      iconPath: '/colegio.png',
+      iconAlt: 'Colegio Bilingue La Ensenanza logo',
     },
   ],
   certifications: [
-    'NVIDIA DLI - Generative AI with Diffusion Models',
-    'NVIDIA DLI - Applications of AI for Anomaly Detection',
-    'NVIDIA DLI - Rapid Application Development with Large Language Models (LLMs)',
-    'NVIDIA DLI - Efficient Large Language Model (LLM) Customization',
-    'NVIDIA DLI - Building LLM Applications With Prompt Engineering',
-    'NVIDIA DLI - Building Transformer-Based Natural Language Processing Applications',
-    'NVIDIA DLI - Fundamentals of Deep Learning',
-    'IELTS Academic C1',
+    {
+      provider: 'NVIDIA DLI',
+      title: 'Generative AI with Diffusion Models',
+      summary:
+        'Built a foundation in diffusion pipelines, U-Nets, CLIP conditioning, and text-to-image generation from prompts.',
+      iconPath: '/nvidia_logo.jpg',
+      iconAlt: 'NVIDIA DLI logo',
+    },
+    {
+      provider: 'NVIDIA DLI',
+      title: 'Applications of AI for Anomaly Detection',
+      summary:
+        'Worked with anomaly detection workflows using XGBoost, autoencoders, and GAN-based approaches for abnormal pattern detection.',
+      iconPath: '/nvidia_logo.jpg',
+      iconAlt: 'NVIDIA DLI logo',
+    },
+    {
+      provider: 'NVIDIA DLI',
+      title: 'Rapid Application Development with Large Language Models (LLMs)',
+      summary:
+        'Covered end-to-end LLM application building with Hugging Face, transformer APIs, LangChain, and agent-oriented orchestration.',
+      iconPath: '/nvidia_logo.jpg',
+      iconAlt: 'NVIDIA DLI logo',
+    },
+    {
+      provider: 'NVIDIA DLI',
+      title: 'Efficient Large Language Model (LLM) Customization',
+      summary:
+        'Learned parameter-efficient customization techniques, synthetic data generation, and NVIDIA NeMo-based LLM adaptation.',
+      iconPath: '/nvidia_logo.jpg',
+      iconAlt: 'NVIDIA DLI logo',
+    },
+    {
+      provider: 'NVIDIA DLI',
+      title: 'Building LLM Applications With Prompt Engineering',
+      summary:
+        'Focused on iterative prompt engineering, LangChain workflows, NVIDIA NIM, and Llama 3.1 for practical LLM applications.',
+      iconPath: '/nvidia_logo.jpg',
+      iconAlt: 'NVIDIA DLI logo',
+    },
+    {
+      provider: 'NVIDIA DLI',
+      title: 'Building Transformer-Based Natural Language Processing Applications',
+      summary:
+        'Applied transformer models to NLP tasks such as NER, classification, question answering, and model deployment for inference.',
+      iconPath: '/nvidia_logo.jpg',
+      iconAlt: 'NVIDIA DLI logo',
+    },
+    {
+      provider: 'NVIDIA DLI',
+      title: 'Fundamentals of Deep Learning',
+      summary:
+        'Covered core deep learning practice with PyTorch, CNNs, data augmentation, transfer learning, and neural-network workflows.',
+      iconPath: '/nvidia_logo.jpg',
+      iconAlt: 'NVIDIA DLI logo',
+    },
+    {
+      provider: 'IELTS',
+      title: 'IELTS Academic C1',
+      summary:
+        'Validated advanced English proficiency across academic reading, writing, listening, and speaking contexts.',
+      iconPath: '/IELTS.png',
+      iconAlt: 'IELTS logo',
+    },
   ],
   contact: {
     eyebrow: 'Next step',

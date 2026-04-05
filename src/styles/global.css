@@ -336,7 +336,6 @@ main {
 .focus-grid,
 .skills-grid,
 .projects-grid,
-.credentials-grid,
 .contact-panels {
   display: grid;
   gap: 1rem;
@@ -348,8 +347,7 @@ main {
 }
 
 .experience-grid,
-.projects-grid,
-.credentials-grid {
+.projects-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -929,12 +927,129 @@ main {
 
 .education-list {
   display: grid;
-  gap: 1.1rem;
+  gap: 1.25rem;
+}
+
+.education-entry {
+  display: grid;
+  gap: 0.28rem;
 }
 
 .education-entry + .education-entry {
-  padding-top: 1rem;
+  padding-top: 1.15rem;
   border-top: 1px solid var(--line);
+}
+
+.education-entry__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.education-entry__logo {
+  width: 2.6rem;
+  height: 2.6rem;
+  flex: 0 0 auto;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--panel-border);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.certifications-carousel {
+  display: grid;
+  gap: 1rem;
+}
+
+.certifications-carousel__copy p {
+  margin: 0.55rem 0 0;
+}
+
+.certification-card {
+  display: grid;
+  gap: 1rem;
+  padding: 1.15rem;
+  border-radius: 18px;
+  border: 1px solid var(--panel-border);
+  background: var(--chip);
+  min-height: 14rem;
+}
+
+.certification-card__provider {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.certification-card__provider-copy {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.certification-card__provider-copy span {
+  color: var(--muted-strong);
+  font-weight: 600;
+}
+
+.certification-card__provider-copy small {
+  color: var(--muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.certification-card__logo {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--panel-border);
+  padding: 0.28rem;
+}
+
+.certification-card strong {
+  color: var(--text);
+  font-size: 1.08rem;
+  line-height: 1.5;
+}
+
+.certification-card p {
+  margin: 0;
+  max-width: 56rem;
+  color: var(--muted-strong);
+}
+
+.certifications-carousel__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.carousel-button {
+  padding: 0.7rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--panel-border);
+  background: var(--chip);
+  color: var(--muted-strong);
+  cursor: pointer;
+}
+
+.carousel-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.carousel-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.carousel-dot.is-active {
+  background: var(--accent);
 }
 
 .timeline-card__header,
@@ -1247,7 +1362,6 @@ main {
   .experience-grid,
   .focus-grid,
   .projects-grid,
-  .credentials-grid,
   .contact-panels {
     grid-template-columns: 1fr;
   }

@@ -23,11 +23,33 @@ export const portfolioJa: PortfolioContent = {
   },
   hero: {
     eyebrow: 'ポートフォリオ / ソフトウェアエンジニアリング',
-    title: 'バックエンド志向とプロダクト視点、AIの理解を持つフルスタックエンジニア。',
+    title: 'バックエンド、フルスタック実装、応用AIに強みを持つソフトウェアエンジニア。',
     intro:
-      '私は Universidad de los Andes の学際的な工学系学生で、Artificial Intelligence、Machine Learning、Data Science、そしてソフトウェアエンジニアリングに取り組んでいます。Web プラットフォーム、モバイルアプリ、AI システム、データベース、クラウド製品を設計からデプロイまで構築しています。',
+      '私は Universidad de los Andes の学際的な工学系学生で、ソフトウェアエンジニアリング、Artificial Intelligence、Machine Learning、Data Science を組み合わせたプロフィールを持っています。フルスタックプラットフォーム、モバイルアプリ、AI システム、リレーショナルデータベース、クラウド製品を設計からデプロイまで構築してきました。',
     note:
-      '人工知能の教育、機械学習システムの構築、国際チームでの協働を通じて、実践的で協調的、そして信頼できるソフトウェアを重視するエンジニアリング姿勢が育ちました。',
+      '特にバックエンド開発、分散システム、スケーラブルなソフトウェアプラットフォームに関心がありますが、ユーザー向けの実装を一気通貫で担当することもできます。人工知能の教育、機械学習ワークフローの構築、国際チームでの協働を通じて、実践的で規律があり、実行力の高いエンジニアリング姿勢が育ちました。',
+    highlights: [
+      {
+        label: 'Systems & Computer Engineer',
+        iconPath: '/andes.jpg',
+        iconAlt: 'Universidad de los Andes logo',
+      },
+      {
+        label: 'Electrical Engineer',
+        iconPath: '/andes.jpg',
+        iconAlt: 'Universidad de los Andes logo',
+      },
+      {
+        label: 'Electronic Engineer',
+        iconPath: '/andes.jpg',
+        iconAlt: 'Universidad de los Andes logo',
+      },
+      {
+        label: 'Elected Participant and IT Support, GOROM Association',
+        iconPath: '/Gorom-1.png',
+        iconAlt: 'GOROM Association logo',
+      },
+    ],
     panelLabel: '現在のポジショニング',
     panelDescription:
       'フルスタック開発、クラウドデプロイ、データワークフロー、AI周辺システムに実践経験を持つソフトウェアエンジニアリング学生です。',
@@ -35,6 +57,9 @@ export const portfolioJa: PortfolioContent = {
     primaryCtaHref: '#projects',
     secondaryCtaLabel: '連絡する',
     secondaryCtaHref: '#contact',
+    tertiaryCtaLabel: 'PDFで履歴書を見る',
+    tertiaryCtaHref:
+      'https://drive.google.com/file/d/18vLTKJNVjxc1Xdyhk8yjP8CDv_bHPwmV/view?usp=sharing',
     imagePath: '/profile-photo.jpeg',
     imageAlt: 'Santiago Jaimes のポートレート',
     imageFallback: '/public/profile-photo.jpg に写真を追加してください',
@@ -303,23 +328,34 @@ export const portfolioJa: PortfolioContent = {
     certificationsLabel: '認定',
     certificationsTitle: 'NVIDIA と語学の認定',
   },
-  education: {
-    institution: 'Universidad de los Andes',
-    degree: 'Systems and Computing Engineering 学士課程',
-    period: '2022年 - 2026年7月予定',
-    location: 'ボゴタ、コロンビア',
-    details: [
-      'バックエンド、分散システム、AI、スケーラブルなソフトウェアプラットフォームに強い関心があります。',
-      '人工知能の教育経験と、LLM アプリケーション開発ワークショップの支援経験があります。',
-      'ソフトウェアエンジニアリング、データ、システム思考を組み合わせた学術背景です。',
-    ],
-  },
+  education: [
+    {
+      institution: 'Universidad de los Andes',
+      degree: 'B.Sc. Systems and Computing Engineering',
+      period: 'Jan 2020 - Jul 2026',
+      location: 'Bogota, Colombia',
+    },
+    {
+      institution: 'Universidad de los Andes',
+      degree: 'B.Sc. Electrical Engineering',
+      period: 'Jan 2020 - Jul 2025',
+      location: 'Bogota, Colombia',
+    },
+    {
+      institution: 'Universidad de los Andes',
+      degree: 'B.Sc. Electronical Engineering',
+      period: 'Jan 2020 - Apr 2026',
+      location: 'Bogota, Colombia',
+    },
+  ],
   certifications: [
+    'NVIDIA DLI - Generative AI with Diffusion Models',
+    'NVIDIA DLI - Applications of AI for Anomaly Detection',
+    'NVIDIA DLI - Rapid Application Development with Large Language Models (LLMs)',
+    'NVIDIA DLI - Efficient Large Language Model (LLM) Customization',
+    'NVIDIA DLI - Building LLM Applications With Prompt Engineering',
+    'NVIDIA DLI - Building Transformer-Based Natural Language Processing Applications',
     'NVIDIA DLI - Fundamentals of Deep Learning',
-    'NVIDIA - Generative AI and Large Language Models',
-    'NVIDIA - Building Transformer-Based NLP Applications',
-    'NVIDIA - Building LLM Applications With Prompt Engineering',
-    'NVIDIA - Efficient Large Language Model Customization',
     'IELTS Academic C1',
   ],
   contact: {

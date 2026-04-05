@@ -32,15 +32,16 @@ export function CredentialsSection({ content }: CredentialsSectionProps) {
               </div>
             }
           >
-            <h3>{education.institution}</h3>
-            <p className="meta-line">{education.degree}</p>
-            <p className="meta-line">{education.period}</p>
-            <p className="meta-line">{education.location}</p>
-            <ul className="bullet-list">
-              {education.details.map(detail => (
-                <li key={detail}>{detail}</li>
+            <div className="education-list">
+              {education.map(item => (
+                <div className="education-entry" key={`${item.degree}-${item.period}`}>
+                  <h3>{item.institution}</h3>
+                  <p className="meta-line">{item.degree}</p>
+                  <p className="meta-line">{item.period}</p>
+                  <p className="meta-line">{item.location}</p>
+                </div>
               ))}
-            </ul>
+            </div>
           </ShellCard>
         </motion.div>
 

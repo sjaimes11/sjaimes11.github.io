@@ -31,6 +31,19 @@ export type LanguageSkill = {
   badge: string
 }
 
+export type HeroHighlight = {
+  label: string
+  iconPath: string
+  iconAlt: string
+}
+
+export type EducationEntry = {
+  institution: string
+  degree: string
+  period: string
+  location: string
+}
+
 export type ExperienceItem = {
   organization: string
   role: string
@@ -81,12 +94,15 @@ export type PortfolioContent = {
     title: string
     intro: string
     note: string
+    highlights?: HeroHighlight[]
     panelLabel: string
     panelDescription: string
     primaryCtaLabel: string
     primaryCtaHref: string
     secondaryCtaLabel: string
     secondaryCtaHref: string
+    tertiaryCtaLabel?: string
+    tertiaryCtaHref?: string
     imagePath?: string
     imageAlt?: string
     imageFallback: string
@@ -140,13 +156,7 @@ export type PortfolioContent = {
     certificationsLabel: string
     certificationsTitle: string
   }
-  education: {
-    institution: string
-    degree: string
-    period: string
-    location: string
-    details: string[]
-  }
+  education: EducationEntry[]
   certifications: string[]
   contact: {
     eyebrow: string

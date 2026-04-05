@@ -22,6 +22,20 @@ export function HeroSection({ content }: HeroSectionProps) {
         >
           <span className="eyebrow">{hero.eyebrow}</span>
           <h1>{hero.title}</h1>
+          {hero.highlights?.length ? (
+            <div className="hero-highlights">
+              {hero.highlights.map(item => (
+                <div className="hero-highlight-card" key={item.label}>
+                  <img
+                    className="hero-highlight-card__logo"
+                    src={item.iconPath}
+                    alt={item.iconAlt}
+                  />
+                  <strong>{item.label}</strong>
+                </div>
+              ))}
+            </div>
+          ) : null}
           <p className="hero-copy__intro">{hero.intro}</p>
 
           <div className="hero-actions">
@@ -31,6 +45,16 @@ export function HeroSection({ content }: HeroSectionProps) {
             <a className="button button--ghost" href={hero.secondaryCtaHref}>
               {hero.secondaryCtaLabel}
             </a>
+            {hero.tertiaryCtaLabel && hero.tertiaryCtaHref ? (
+              <a
+                className="button button--ghost"
+                href={hero.tertiaryCtaHref}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {hero.tertiaryCtaLabel}
+              </a>
+            ) : null}
           </div>
 
           <p className="hero-copy__note">{hero.note}</p>

@@ -23,11 +23,33 @@ export const portfolioEn: PortfolioContent = {
   },
   hero: {
     eyebrow: 'Portfolio / Software Engineering',
-    title: 'Full-stack engineer with backend focus, product instinct, and AI depth.',
+    title: 'Software engineer focused on backend systems, full-stack delivery, and applied AI.',
     intro:
-      'I am a multidisciplinary engineering student at Universidad de los Andes specializing in Artificial Intelligence, Machine Learning, Data Science, and software engineering. I build web platforms, mobile apps, AI systems, databases, and cloud-backed products from design to deployment.',
+      'I am a multidisciplinary engineering student at Universidad de los Andes with a profile that combines software engineering, Artificial Intelligence, Machine Learning, and Data Science. My experience includes building full-stack platforms, mobile applications, AI systems, relational databases, and cloud-backed products from design to deployment.',
     note:
-      'Teaching Artificial Intelligence, building machine learning systems, and working in international teams shaped how I approach engineering: practical, collaborative, and focused on reliable software with real users.',
+      'I care about backend development, distributed systems, and scalable software platforms, but I am also comfortable owning product-facing implementation end to end. Teaching Artificial Intelligence, building machine learning workflows, and collaborating in international environments shaped an engineering style that is practical, disciplined, and strongly execution-oriented.',
+    highlights: [
+      {
+        label: 'Systems & Computer Engineer',
+        iconPath: '/andes.jpg',
+        iconAlt: 'Universidad de los Andes logo',
+      },
+      {
+        label: 'Electrical Engineer',
+        iconPath: '/andes.jpg',
+        iconAlt: 'Universidad de los Andes logo',
+      },
+      {
+        label: 'Electronic Engineer',
+        iconPath: '/andes.jpg',
+        iconAlt: 'Universidad de los Andes logo',
+      },
+      {
+        label: 'Elected Participant and IT Support, GOROM Association',
+        iconPath: '/Gorom-1.png',
+        iconAlt: 'GOROM Association logo',
+      },
+    ],
     panelLabel: 'Current positioning',
     panelDescription:
       'Software engineering student with hands-on experience across full-stack delivery, cloud deployment, data workflows, and AI-adjacent systems.',
@@ -35,6 +57,9 @@ export const portfolioEn: PortfolioContent = {
     primaryCtaHref: '#projects',
     secondaryCtaLabel: 'Contact me',
     secondaryCtaHref: '#contact',
+    tertiaryCtaLabel: 'View CV in PDF',
+    tertiaryCtaHref:
+      'https://drive.google.com/file/d/18vLTKJNVjxc1Xdyhk8yjP8CDv_bHPwmV/view?usp=sharing',
     imagePath: '/profile-photo.jpeg',
     imageAlt: 'Portrait of Santiago Jaimes',
     imageFallback: 'Add your image at /public/profile-photo.jpg',
@@ -350,23 +375,34 @@ export const portfolioEn: PortfolioContent = {
     certificationsLabel: 'Certifications',
     certificationsTitle: 'NVIDIA and language credentials',
   },
-  education: {
-    institution: 'Universidad de los Andes',
-    degree: 'B.Sc. Systems and Computing Engineering',
-    period: '2022 - Expected Jul 2026',
-    location: 'Bogota, Colombia',
-    details: [
-      'Strong interest in backend development, distributed systems, AI, and scalable software platforms.',
-      'Teaching experience in Artificial Intelligence and workshop support in LLM application development.',
-      'Academic background that combines software engineering, data, and systems thinking.',
-    ],
-  },
+  education: [
+    {
+      institution: 'Universidad de los Andes',
+      degree: 'B.Sc. Systems and Computing Engineering',
+      period: 'Jan 2020 - Jul 2026',
+      location: 'Bogota, Colombia',
+    },
+    {
+      institution: 'Universidad de los Andes',
+      degree: 'B.Sc. Electrical Engineering',
+      period: 'Jan 2020 - Jul 2025',
+      location: 'Bogota, Colombia',
+    },
+    {
+      institution: 'Universidad de los Andes',
+      degree: 'B.Sc. Electronical Engineering',
+      period: 'Jan 2020 - Apr 2026',
+      location: 'Bogota, Colombia',
+    },
+  ],
   certifications: [
+    'NVIDIA DLI - Generative AI with Diffusion Models',
+    'NVIDIA DLI - Applications of AI for Anomaly Detection',
+    'NVIDIA DLI - Rapid Application Development with Large Language Models (LLMs)',
+    'NVIDIA DLI - Efficient Large Language Model (LLM) Customization',
+    'NVIDIA DLI - Building LLM Applications With Prompt Engineering',
+    'NVIDIA DLI - Building Transformer-Based Natural Language Processing Applications',
     'NVIDIA DLI - Fundamentals of Deep Learning',
-    'NVIDIA - Generative AI and Large Language Models',
-    'NVIDIA - Building Transformer-Based NLP Applications',
-    'NVIDIA - Building LLM Applications With Prompt Engineering',
-    'NVIDIA - Efficient Large Language Model Customization',
     'IELTS Academic C1',
   ],
   contact: {

@@ -1186,35 +1186,167 @@ main {
   padding: 1.4rem 1.5rem 1.5rem;
 }
 
-.education-list {
+.education-timeline {
   display: grid;
   gap: 1.25rem;
 }
 
-.education-entry {
+.education-timeline__item {
   display: grid;
-  gap: 0.28rem;
+  grid-template-columns: 4.75rem minmax(0, 1fr);
+  gap: 1rem;
 }
 
-.education-entry + .education-entry {
-  padding-top: 1.15rem;
-  border-top: 1px solid var(--line);
+.education-timeline__rail {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.education-entry__header {
+.education-timeline__line {
+  position: absolute;
+  top: 0;
+  bottom: -1.5rem;
+  left: 50%;
+  width: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, rgba(88, 117, 167, 0.3), rgba(88, 117, 167, 0.12));
+}
+
+.education-timeline__item:last-child .education-timeline__line {
+  bottom: 2.75rem;
+}
+
+.education-timeline__node {
+  position: relative;
+  z-index: 1;
+  width: 3.4rem;
+  height: 3.4rem;
+  margin-top: 1.35rem;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(80, 227, 145, 0.4);
+  background: linear-gradient(180deg, rgba(8, 20, 36, 0.98), rgba(11, 19, 35, 0.88));
+  box-shadow: 0 0 0 4px rgba(78, 207, 129, 0.08);
+}
+
+.education-timeline__node img {
+  width: 2.55rem;
+  height: 2.55rem;
+  object-fit: cover;
+  border-radius: 999px;
+}
+
+.education-timeline__content {
+  min-width: 0;
+}
+
+.education-card {
+  width: 100%;
+  text-align: left;
+  padding: 1.35rem 1.35rem 1.25rem;
+  border-radius: 20px;
+  border: 1px solid var(--panel-border);
+  background: linear-gradient(180deg, rgba(10, 19, 34, 0.92), rgba(8, 15, 29, 0.88));
+  color: inherit;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+:root[data-theme='light'] .education-card {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 248, 253, 0.94)),
+    radial-gradient(circle at top right, rgba(28, 121, 210, 0.05), transparent 40%);
+}
+
+.education-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.education-card__title-wrap {
   display: flex;
   align-items: flex-start;
   gap: 0.9rem;
+  min-width: 0;
 }
 
-.education-entry__logo {
-  width: 2.6rem;
-  height: 2.6rem;
-  flex: 0 0 auto;
-  object-fit: cover;
-  border-radius: 12px;
+.education-card__index {
+  width: 2rem;
+  height: 2rem;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
   border: 1px solid var(--panel-border);
-  background: rgba(255, 255, 255, 0.06);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  flex: 0 0 auto;
+}
+
+.education-card h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.28rem;
+  line-height: 1.3;
+}
+
+.education-card__institution {
+  margin: 0.35rem 0 0;
+  color: var(--muted-strong);
+  font-size: 1rem;
+}
+
+.education-card__period {
+  margin: 0.35rem 0 0;
+  color: var(--tech);
+  font-size: 0.92rem;
+}
+
+.education-card__toggle {
+  width: 2rem;
+  height: 2rem;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  border: 1px solid var(--panel-border);
+  color: var(--muted-strong);
+  font-size: 1.1rem;
+  flex: 0 0 auto;
+}
+
+.education-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.education-card__meta span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.48rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--chip);
+  color: var(--muted-strong);
+  font-size: 0.82rem;
+}
+
+.education-card__details {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.education-card__details p {
+  margin: 0 0 0.85rem;
+  color: var(--muted-strong);
+  line-height: 1.75;
 }
 
 .certifications-carousel {
@@ -1693,6 +1825,29 @@ main {
   .project-feature-card__controls {
     width: 100%;
     justify-content: space-between;
+  }
+
+  .education-timeline__item {
+    grid-template-columns: 1fr;
+  }
+
+  .education-timeline__rail {
+    justify-content: flex-start;
+    min-height: 0;
+  }
+
+  .education-timeline__line {
+    display: none;
+  }
+
+  .education-timeline__node {
+    margin-top: 0;
+  }
+
+  .education-card__header,
+  .education-card__title-wrap {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .section {

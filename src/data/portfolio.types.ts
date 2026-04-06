@@ -42,7 +42,9 @@ export type EducationEntry = {
   degree: string
   period: string
   location: string
-  gpa: string
+  duration?: string
+  gpa?: string
+  summary?: string
   details: string[]
   iconPath: string
   iconAlt: string

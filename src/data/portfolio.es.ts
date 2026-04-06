@@ -153,7 +153,7 @@ export const portfolioEs: PortfolioContent = {
     },
     {
       organization: 'GOROM Association',
-      role: 'IT Coordinator',
+      role: 'IT Support',
       period: 'Ago 2025 - Dic 2025',
       location: 'Tokio, Japón (Híbrido)',
       bullets: [
@@ -357,13 +357,16 @@ export const portfolioEs: PortfolioContent = {
     {
       institution: 'Universidad de los Andes',
       degree: 'B.Sc. Systems and Computing Engineering',
-      period: 'Jan 2020 - Presente',
+      period: 'Jan 2022 - Presente',
       location: 'Bogotá, Colombia',
+      duration: '4.5 años',
       gpa: 'Promedio: 4.37 / 5.0 (actual)',
+      summary:
+        'Es la carrera que mejor representa la dirección actual de mi perfil en software engineering, backend, plataformas y entrega de producto.',
       details: [
-        'Es la carrera que mejor representa el perfil de software que quiero proyectar.',
-        'Con mayor foco en backend, sistemas distribuidos, datos y plataformas de software escalables.',
-        'Conecta de forma más clara software engineering, implementación de producto y pensamiento de sistemas.',
+        'Profundizó mi foco en backend, sistemas distribuidos y plataformas de software escalables.',
+        'Conecta de forma clara software engineering, implementación de producto y pensamiento de sistemas.',
+        'Se convirtió en la base académica más fuerte detrás de mi trabajo full-stack y de IA aplicada.',
       ],
       iconPath: '/andes.jpg',
       iconAlt: 'Logo de la Universidad de los Andes',
@@ -373,9 +376,12 @@ export const portfolioEs: PortfolioContent = {
       degree: 'B.Sc. Electronical Engineering',
       period: 'Jan 2020 - Apr 2026',
       location: 'Bogotá, Colombia',
+      duration: '6 años',
       gpa: 'Promedio: 4.37 / 5.0',
+      summary:
+        'Amplió cómo entiendo la electrónica, el rigor de ingeniería y la relación entre software y sistemas técnicos reales.',
       details: [
-        'Fortaleció mi entendimiento de electrónica, rigor técnico y restricciones de diseño de ingeniería.',
+        'Fortaleció mi entendimiento de restricciones de diseño y resolución de problemas con componente físico.',
         'Aporta profundidad a cómo entiendo sistemas que conectan software con implementaciones reales.',
         'Refuerza pensamiento analítico disciplinado en trabajo multidisciplinario.',
       ],
@@ -387,25 +393,47 @@ export const portfolioEs: PortfolioContent = {
       degree: 'B.Sc. Electrical Engineering',
       period: 'Jan 2020 - Jul 2025',
       location: 'Bogotá, Colombia',
+      duration: '5.5 años',
       gpa: 'Promedio: 4.33 / 5.0',
+      summary:
+        'Construyó la base cuantitativa y de sistemas que marcó la primera etapa de mi trayectoria antes de que software se volviera el foco más claro.',
       details: [
-        'Construyó una base fuerte en análisis cuantitativo, modelado y visión de sistemas.',
         'Expandió mi fundamento para resolver problemas técnicos de forma estructurada.',
-        'Representa una etapa anterior de mi trayectoria que complementa mi foco actual en software.',
+        'Fortaleció mi comodidad con análisis abstracto, rigor y profundidad técnica.',
+        'Sigue complementando el enfoque actual de mi perfil hacia software y plataformas.',
       ],
       iconPath: '/andes.jpg',
       iconAlt: 'Logo de la Universidad de los Andes',
+    },
+    {
+      institution: 'EF Education First',
+      degree: 'Academic Exchange - English B2-C1 (Boston)',
+      period: '2019-01 - 2019-06',
+      location: 'Boston, USA',
+      duration: '6 meses',
+      summary:
+        'Mi primera experiencia académica internacional, donde mejoré mucho mi inglés, me adapté a un entorno nuevo y gané confianza en contextos multiculturales.',
+      details: [
+        'Completé una inmersión intensiva en inglés enfocada en comunicación académica, fluidez y seguridad en contextos reales.',
+        'Aproveché la experiencia para conocer varias ciudades de Estados Unidos y ampliar mi perspectiva internacional desde temprano.',
+        'Ayudó a formar las habilidades de comunicación y la mentalidad global que luego reforzaron mi trabajo en equipos internacionales.',
+      ],
+      iconPath: '/ef.jpeg',
+      iconAlt: 'Logo de EF Education First',
     },
     {
       institution: 'Colegio Bilingüe La Enseñanza',
       degree: 'High School Diploma',
       period: 'Jan 2009 - Nov 2018',
       location: 'Bogotá, Bogotá D.C., Colombia',
+      duration: '10 años',
       gpa: 'Promedio: 4.4 / 5.0',
+      summary:
+        'Base escolar bilingüe que formó mi disciplina académica, mis habilidades de comunicación y mi constancia antes de la universidad.',
       details: [
-        'Base escolar bilingüe que fortaleció comunicación, disciplina y constancia académica.',
-        'Representa la etapa formal más temprana de mi trayectoria educativa antes de ingeniería.',
-        'Fue el inicio de la consistencia académica que luego mantuve en universidad.',
+        'Construyó la etapa formal más temprana de mi trayectoria antes de ingeniería.',
+        'Fortaleció comunicación, disciplina y constancia a través de un entorno bilingüe.',
+        'Fue el origen de los hábitos que luego sostuvieron mi vida universitaria y experiencias internacionales.',
       ],
       iconPath: '/colegio.png',
       iconAlt: 'Logo del Colegio Bilingüe La Enseñanza',

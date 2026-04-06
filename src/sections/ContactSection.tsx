@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import type { ReactNode } from 'react'
+import { SectionTitle } from '../components/SectionTitle'
 import type { PortfolioContent } from '../data/portfolio'
 
 type ContactSectionProps = {
@@ -105,10 +106,12 @@ function getLogo(label: string): ReactNode {
 }
 
 export function ContactSection({ content }: ContactSectionProps) {
-  const { contact } = content
+  const { contact, navigation } = content
 
   return (
     <section className="section" id="contact">
+      <SectionTitle eyebrow={contact.eyebrow} title={navigation.contact} icon="contact" />
+
       <motion.div
         className="contact-stack"
         initial={{ opacity: 0, y: 26 }}
@@ -165,11 +168,6 @@ export function ContactSection({ content }: ContactSectionProps) {
               <strong>{contact.availability}</strong>
             </div>
             <p>{contact.availabilityNote}</p>
-            <div className="status-card__meta">
-              <a href={`mailto:${contact.primaryEmail}`}>{contact.primaryEmail}</a>
-              <a href={`mailto:${contact.secondaryEmail}`}>{contact.secondaryEmail}</a>
-              <a href={`tel:${contact.phone.replace(/\s+/g, '')}`}>{contact.phone}</a>
-            </div>
           </article>
         </div>
       </motion.div>
